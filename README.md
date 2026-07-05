@@ -5,7 +5,7 @@
 
 Every file in this project is code I wrote and submitted while completing the NeetCode ML course.
 The problems progressively build from gradient descent fundamentals all the way to a working GPT.
-
+By the way, I am just doing this for fun because I really like this stuff. I already know the stuff but am just revisiting the basics.
 ## Project Structure
 
 ```
