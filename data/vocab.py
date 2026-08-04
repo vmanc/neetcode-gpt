@@ -5,7 +5,8 @@ class Solution:
         # Return (stoi, itos) where:
         # - stoi maps each unique character to a unique integer (sorted alphabetically)
         # - itos is the reverse mapping (integer to character)
-        stoi = {char : i for i, char in enumerate(sorted(set(text)))}
+        unique_characters = sorted(set(text))
+        stoi = {char : i for i, char in enumerate(unique_characters)}
         itos = {i : char for i, char in stoi.items()}
         return (stoi, itos)
 
