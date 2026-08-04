@@ -16,6 +16,6 @@ class Solution:
         angles = pos / np.power(10000, index / d_model)
         PE = np.zeros((seq_len, d_model))
         PE[:, 0::2] = np.sin(angles)
-        PE[:, 1::2] = np.cos(angles[:, :PE[:, 1::2].shape[1]])
+        PE[:, 1::2] = np.cos(angles[:, :d_model // 2])
         return np.round(PE, 5)
         
