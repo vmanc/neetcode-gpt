@@ -6,7 +6,7 @@ class Solution:
         # - stoi maps each unique character to a unique integer (sorted alphabetically)
         # - itos is the reverse mapping (integer to character)
         stoi = {char : i for i, char in enumerate(sorted(set(text)))}
-        itos = {i : char for i, char in enumerate(sorted(set(text)))}
+        itos = {i : char for i, char in stoi.items()}
         return (stoi, itos)
 
     def encode(self, text: str, stoi: Dict[str, int]) -> List[int]:
